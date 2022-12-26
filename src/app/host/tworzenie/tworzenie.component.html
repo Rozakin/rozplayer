@@ -1,0 +1,6 @@
+<h1>Your now creating your party</h1>
+<form #f="ngForm">
+    <label for="nazwa">Create a name so your friends can find your session.</label>
+    <input type="text" placeholder="Name" name="name" [(ngModel)]="nazwa">
+    <button type="submit" (click)="next()">Go next</button>
+</form>

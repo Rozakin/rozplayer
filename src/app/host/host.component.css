@@ -1,0 +1,123 @@
+.box{
+    color: #eeffee;
+    background-color: #202124;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+  }
+  .user-card{
+    background-color: #10141F;
+    width: 300px;
+    margin-top: 10px;
+    margin-inline: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .user-card:hover{
+    background-color: #090f20;
+  }
+  .user-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-inline: auto;
+  }
+  .info{
+    margin-inline: auto;
+    text-align: center;
+  }
+  .wyloguj{
+    cursor: pointer;
+    background: #E05454;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 18pt;
+    padding-inline: 10px;
+    color: currentColor;
+  }
+  
+  .wyloguj:hover{
+    background: #ac3737;
+  }
+  
+  .main{
+    width: calc(100vw - 320px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .main input{
+    background: none;
+    border: 2px solid #585a5e;
+    border-radius: 30px;
+    width: 700px;
+    height: 50px;
+    font-size: 18pt;
+    padding: 10px;
+    padding-left: 60px;
+    color: currentColor;
+    position: relative;
+    left: -26px;
+  }
+  .lupa{
+    position: relative;
+    right: -26px;
+    top: 10px;
+  }
+  .track{
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 700px;
+    display: flex;
+  }
+  .track:hover{
+    background-color: #2f4b38;
+  }
+  .title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 600px;
+  }
+  .author{
+  
+    font-weight: 300;
+    color: #4caf50;
+    margin-right: 5px;
+  
+  }
+  .dane{
+    margin-left: 5px;
+  }
+  .wyniki{
+    margin-top: 10px;
+    background-color: #5E5E5E;
+    border-radius: 15px;
+  } /*
+  .wyniki div{
+    width: 700px;
+    margin-top: 10px;
+  }
+  .wyniki div img{
+    float: left;
+  }
+  .dane{
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .artist{
+    display: contents;
+    text-align: left;
+  } */
+  

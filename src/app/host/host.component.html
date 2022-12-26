@@ -1,0 +1,32 @@
+<div class="box">
+    <div class="user-card">
+      <div class="user-img">
+        <img [src]="user.images[0].url" alt="">
+      </div>
+      <div class="info">
+        <h2>{{user.display_name}}</h2>
+        <button class="wyloguj">Wyloguj</button>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#585a5e" class="lupa" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        <input type="search" placeholder="Szukaj..." #f (input)="onInput(f.value)">
+        <div class="wyniki" *ngIf="tracks && !puste">
+          <div *ngFor="let track of tracks" (click)="pusc(track.uri)" class="track">
+            <img [src]="track.album.images[0].url" alt="Okładka" width="100" height="100">
+              <div class="dane">
+                <div class="title d-block">{{track.name}}</div>
+                <div>
+                  <span class="author d-block ms-4" *ngFor="let artist of track.artists">{{artist.name}}</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
