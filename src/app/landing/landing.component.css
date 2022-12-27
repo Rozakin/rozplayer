@@ -1,0 +1,43 @@
+.wrapper{
+    height: 100vw;
+    height: 100vh;
+    background-color: #ffbf17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: aktiv-grotesk-extended, sans-serif; 
+    flex-direction: column;
+}
+img{
+    height: 600px;
+    border: 50px solid white;
+}
+a:link{
+    color: currentColor;
+    text-decoration: none;
+}
+a:visited{
+    color: currentColor;
+    text-decoration: none;
+}
+.przyciski a{
+    border: 3px solid black;
+    font-size: 18pt;
+    padding: 1em;
+    box-shadow: 8px 8px 0px 0px black;
+}
+.przyciski a:first-child{
+    background: white;
+    margin-right: 3em;
+}
+
+.przyciski a:hover{
+    box-shadow: 16px 16px 0px 0px black;
+}
+
+.przyciski a:first-child:hover{
+    background: #d8d8d8;
+}
+.przyciski a:last-child:hover{
+    background: #d8d8d8;
+}

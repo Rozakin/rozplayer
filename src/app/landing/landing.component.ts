@@ -12,6 +12,8 @@ export class LandingComponent implements OnInit{
 
   constructor(private router: Router, private route: ActivatedRoute, private hostService: HostService, private joinService: JoinService) { }
 
+  link = ''
+
   ngOnInit(): void {
     if(this.route.snapshot.fragment){
       this.hostService.connect(this.route.snapshot.fragment!.split('&')[0].split('=')[1], (res: boolean)=>{
@@ -23,8 +25,6 @@ export class LandingComponent implements OnInit{
        }
       })
     }
-  }
-  auth(){
     var client_id = 'c2aae051f3974f19880699aa2fa79bf2';
     var redirect_uri = document.location.href;
     var scope = 'user-read-private user-read-email streaming user-read-playback-state user-modify-playback-state user-read-currently-playing';
@@ -33,10 +33,6 @@ export class LandingComponent implements OnInit{
     url += '&client_id=' + encodeURIComponent(client_id);
     url += '&scope=' + encodeURIComponent(scope);
     url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
-    window.open(url, "_self");
-// url += '&state=' + encodeURIComponent(state);
-  }
-  test(){
-
+    this.link = url;
   }
 }
