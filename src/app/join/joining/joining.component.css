@@ -1,0 +1,87 @@
+.wrapper{
+    height: 100vw;
+    height: 100vh;
+    background-color: #ffbf17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: aktiv-grotesk-extended, sans-serif; 
+    flex-direction: column;
+}
+a:link{
+    color: currentColor;
+    text-decoration: none;
+}
+a:visited{
+    color: currentColor;
+    text-decoration: none;
+}
+nav{
+    width: 100vw;
+    border-bottom: 5px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back{
+    padding: 1em;
+    border: 5px solid black;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.back svg{
+    margin-right: 1em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2em;
+}
+h1{
+    font-size: 36pt;
+}
+input{
+    font-family: aktiv-grotesk-extended, sans-serif; 
+    background: none;
+    border: 3px solid black;
+    font-size: 18pt;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0px 0px black;
+}
+form div{
+    display: flex;
+    justify-content: center;
+}
+input:focus{
+    outline: none;
+}
+button{
+    font-family: aktiv-grotesk-extended, sans-serif; 
+    border: 3px solid black;
+    font-size: 18pt;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0px 0px black;
+    background: white;
+    cursor: pointer;
+    margin-left: 1em;
+}
+button:disabled{
+    background: none;
+    cursor: not-allowed;
+}
+button:hover{
+    opacity: 0.8;
+}
+@media(max-width: 1000px){
+    form div{
+        flex-direction: column;
+    }
+    button{
+        margin-left: 0;
+        margin-top: 1em;
+    }
+}
