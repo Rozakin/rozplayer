@@ -26,7 +26,7 @@ export class LandingComponent implements OnInit{
       })
     }
     var client_id = 'c2aae051f3974f19880699aa2fa79bf2';
-    var redirect_uri = 'http://localhost:4200'
+    var redirect_uri = window.location.href;
     var scope = 'user-read-private user-read-email streaming user-read-playback-state user-modify-playback-state user-read-currently-playing';
     var url = 'https://accounts.spotify.com/authorize';
     url += '?response_type=token';
