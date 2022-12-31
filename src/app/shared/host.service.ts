@@ -43,7 +43,10 @@ export class HostService {
             cb(data)
           })
        }
-      dodaj(uri: String, cb?: Function){
+    dodaj(uri: String, cb?: Function){
         this.socket.emit('dodaj', uri)
-      }
+    }
+    wyloguj(){
+        this.socket.close();
+    }
 }

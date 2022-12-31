@@ -39,4 +39,8 @@ export class HostComponent implements OnInit{
     // console.log(uri)
     this.granie.dodaj(uri)
   }
+  wyloguj(){
+    this.router.navigate(['/'])
+    this.host.wyloguj();
+  }
 }
